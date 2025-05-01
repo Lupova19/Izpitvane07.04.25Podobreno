@@ -9,9 +9,26 @@ namespace Teachers
 {
    public class Teacher : TeachersInformation
     {
-        public string Grades { get; set; }
-        public string Subject { get; set; }
-        public string Contract { get; set; }
+        private string grades;
+        public string Grades
+        {
+            get { return grades; }
+            set { grades = value; }
+        }
+
+        private string subject;
+        public string Subject
+        {
+            get { return subject; }
+            set { subject = value; }
+        }
+
+        private string contract;
+        public string Contract
+        {
+            get { return contract; }
+            set { contract = value; }
+        }
 
         public Teacher(string name, string school, string grades, string subject, string contract): base(name, school)
         {

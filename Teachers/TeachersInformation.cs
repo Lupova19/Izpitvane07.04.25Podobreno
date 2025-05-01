@@ -23,7 +23,12 @@ namespace Teachers
             }
         }
 
-        public string School { get; set; }
+        private string school;
+        public string School
+        {
+            get { return school; }
+            set { school = value; }
+        }
 
         protected TeachersInformation(string name, string school)
         {
